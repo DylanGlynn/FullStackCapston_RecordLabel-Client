@@ -33,7 +33,7 @@ export const Cart = () => {
     const deleteAlbum = (id) => {
         let albumId = parseInt(id)
         FetchDelete("albums", `/${albumId}/remove_from_order`, Method("DELETE",))
-        navigate('/')
+
     }
 
     return (
@@ -58,7 +58,7 @@ export const Cart = () => {
                     : <>
                         <article className="cart__contents">
                             <div className="cart__orderNumber">
-                                Order number {openOrder?.id}:
+                                Order Number: {openOrder?.id}
                             </div>
                             <div className="cart__orderSelection">
                                 {
@@ -84,14 +84,19 @@ export const Cart = () => {
                                                     </div>
                                                 </section>
                                             </article>
-                                            <div className="cart__delete" value={album.id}>
-                                                <div
-                                                    className="cart__trashcan"
-                                                    onClick={() => deleteAlbum(album.id)}
-                                                >
-                                                    🗑️
+                                            <article className="cart__priceDelete">
+                                                <div className="cart__albumPrice">
+                                                    ${album.price.toFixed(2)}
                                                 </div>
-                                            </div>
+                                                <div className="cart__delete" value={album.id}>
+                                                    <div
+                                                        className="cart__trashcan"
+                                                        onClick={() => deleteAlbum(album.id)}
+                                                    >
+                                                        🗑️
+                                                    </div>
+                                                </div>
+                                            </article>
                                         </section>
                                     )
                                 }

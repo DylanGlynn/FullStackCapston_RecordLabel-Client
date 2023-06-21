@@ -18,17 +18,9 @@ export const Album = () => {
             .then((albumObject) => { setAlbum(albumObject) })
     }
 
-    const getOrder = () => {
-        Fetch("orders", openOrderURL, Method("GET",))
-            .then((openOrderObject) => { setOpenOrder(openOrderObject) })
-    }
-
     useEffect(() => { getAlbum() }, [albumId])
-    useEffect(() => { getOrder() }, [albumId])
 
-    const addAlbumToCart = (evt) => {
-        evt.preventDefault()
-
+    const addAlbumToCart = () => {
         Fetch("albums", albumPurchaseURL, Method("POST", ))
             .then(() => navigate(`/cart`))
 
@@ -83,7 +75,7 @@ export const Album = () => {
                         </div>
                         {(album?.status?.id === 4 || album?.status?.id === 3) ? <button
                             className="button-album__purchase"
-                            type="submit" onClick={addAlbumToCart}
+                            type="submit" onClick={() => {addAlbumToCart()}}
                         >Add to Cart
                         </button>
                             : <button
