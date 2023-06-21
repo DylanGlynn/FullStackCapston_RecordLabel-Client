@@ -1,0 +1,78 @@
+.navbar__section {
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    border-bottom: 10px solid #999999;
+    display: flex;
+    top: 0;
+    background-color: #669999;
+    margin: 0;
+}
+
+.navbar__groupLeft {
+    align-items: center;
+    margin-right: auto;
+    margin-top: 2px;
+}
+
+.navbar__logoSmall {
+    max-width: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__groupRight {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.navbar__cartIcon {
+    max-width: 50px;
+    margin: 5px;
+}
+
+.navbar__profileIcon {
+    width: 50px;
+    margin: 5px;
+    padding: 0;
+}
+
+.navbar__categories {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.categories__list {
+    color: #fffffe;
+    font-size: 14px;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: 600;
+    margin: 0;
+    justify-content: center;
+}
+
+.category__label {
+    margin-left: 3px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.category__label
+
+.category__label a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #fffffe;
+}

@@ -1,0 +1,135 @@
+.albumList__overview {
+    margin: 15px 5px;
+    align-self: center;
+}
+
+.albumList__article {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.albumList__image {
+    margin-right: 6px;
+    padding-right: 10px;
+    border-right: 2px solid #D1954E;
+    padding-left: 10px;
+    border-left: 2px solid #D1954E;
+}
+
+.albumList__details {
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #000000;
+}
+
+.albumList__title {
+    font-weight: 600;
+}
+
+.albumList__catalogRelease {
+    font-style: italic;
+    font-size: 10pt;
+}
+
+.album__view {
+    margin-top: 7%;
+}
+
+.category__headingTitle a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.category__headingTitle a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.album__info {
+    padding-left: 2.5%;
+}
+
+.album__artistTitle {
+    background-color: #999999;
+    justify-content: left;
+    align-items: center;
+    margin-right: 15%;
+    padding: 0 7px;
+}
+
+.album__artTrackDetails {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-right: 15%
+}
+
+.album__artTracks {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.album__artwork {
+    margin-right: 10px;
+}
+
+.album__trackListing {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 10px;
+    border-left: 2px solid #D1954E;
+}
+
+.album__trackDetails {
+    text-align: left;
+}
+
+.album__details {
+    align-self: right;
+    text-align: right;
+}
+
+.album__description {
+    text-indent: 1%;
+    margin: 10px 15% 10px 10px;
+    font-size: 11pt;
+}
+
+.button-album__purchase {
+    color: #FFFFFF;
+    background-color: #669999;
+    padding: 10px 50px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    margin: 5px 0;
+    border-radius: 25px;
+}
+
+.button-album__unavailable {
+    color: #FFFFFF;
+    background-color: #999999;
+    padding: 10px 50px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    margin: 5px 0;
+    border-radius: 25px;
+}
+
+.album__personnelHeader {
+    background-color: #999999;
+    margin-right: 80%;
+    padding-left: 7px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.album__personnelDetails {
+    background-color: #999999;
+    margin-right: 80%;
+    padding-left: 7px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}

@@ -1,0 +1,30 @@
+.category__heading {
+    background-color: #D1954E;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
+.category__headingTitle {
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    padding-right: 10px;
+ }
+
+.category__headingCircles {
+    max-height: 21px;
+    margin-right: 10px;
+}
+
+.category__description {
+    padding: 0 2%;
+    display: flex;
+    flex-flow: row wrap;
+    font-style: italic;
+}
+
+.category__albumHeading {
+    color: #D1954E;
+    padding: 0 4%;
+    font-weight: 500;
+}

@@ -1,0 +1,162 @@
+.profile, .cart {
+    margin-top: 7%;
+}
+
+.cart__heading {
+    background-color: #D1954E;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
+.cart__headingTitle {
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    padding-right: 10px;
+ }
+
+.cart__headingCircles {
+    max-height: 21px;
+    margin-right: 10px;
+}
+
+.cart__empty {
+    color: #ee2222;
+    font-size: larger;
+    font-weight: 700;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 15px;
+}
+
+.cart__contents {
+    margin: 2% 5%;
+    font-weight: 700;
+}
+
+.cart__orderItem {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 15%;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.cart__orderArtDetails {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.cart__albumDetails {
+    margin-left: 7px;
+}
+
+.cart__trashcan {
+    font-size: 30px;
+}
+
+.cart__trashcan:hover {
+    cursor: pointer;
+}
+
+.cart__buttonArticle {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.button-cart__continueShopping {
+    color: #FFFFFF;
+    background-color: #999999;
+    padding: 10px 50px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    margin: 5px 0;
+    border-radius: 25px;
+}
+
+.button-cart__completeOrder {
+    color: #FFFFFF;
+    background-color: #669999;
+    padding: 10px 50px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    margin: 5px 0;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.cart__finePrint {
+    font-size: 8pt;
+    margin: 10px 50px;
+}
+
+.cart_fpUSPS {
+    margin-bottom: 5px;
+}
+
+.cart_fpInternational {
+    margin-bottom: 5px;
+}
+
+.order__submitted {
+    margin-top: 7%;
+    padding-left: 2.5%;
+}
+
+.profile__heading {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.profile__greeting {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.profile__logout {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.form--login {
+    border: 0;
+    margin: 5px 10.25% 0 10.25%;
+}
+
+.form-control {
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid #669999;
+}
+
+.profile__fieldset {
+    border: 0;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.profile__fieldsetLabel {
+    margin-right: 5px;
+}
+
+.button--submit {
+    color: #FFFFFF;
+    background-color: #669999;
+    padding: 10px 50px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    margin: 5px 0;
+    margin-right: 10px;
+    border-radius: 25px;
+    margin-left: 30px;
+}
