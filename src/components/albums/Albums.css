@@ -48,6 +48,7 @@
 
 .album__info {
     padding-left: 2.5%;
+    border-top: 2px dotted #669999;
 }
 
 .album__artistTitle {

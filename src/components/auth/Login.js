@@ -1,7 +1,8 @@
-import React, { useRef } from "react"
-import { Link, useNavigate } from "react-router-dom"
-import { Fetch, AuthMethod } from "../../ApiManager.js"
 import "./Login.css"
+import { Fetch, AuthMethod } from "../../ApiManager.js"
+import { Link, useNavigate } from "react-router-dom"
+import React, { useRef } from "react"
+import Tzadik_Logo from "../img/Tzadik_Logo.png"
 
 export const Login = () => {
     const username = useRef()
@@ -33,26 +34,35 @@ export const Login = () => {
                 <div>Username or password was not valid.</div>
                 <button className="button--close" onClick={e => invalidDialog.current.close()}>Close</button>
             </dialog>
-            <section>
-                <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Tzadik Recordings</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
-                        <label htmlFor="inputUsername">Username</label>
-                        <input ref={username} type="username" id="username" className="form-control" placeholder="Username address" required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <label htmlFor="inputPassword">Password</label>
-                        <input ref={password} type="password" id="password" className="form-control" placeholder="Password" required />
-                    </fieldset>
-                    <fieldset style={{ textAlign: "center" }}>
-                        <button className="btn btn-1 btn-sep icon-send" type="submit">Sign In</button>
-                    </fieldset>
-                </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">Need to create a new account?</Link>
-            </section>
+            <article className="login__article">
+                <section className="login__logo">
+                    <img className="login__logoImg" alt="Tzadik Logo" src={Tzadik_Logo} />
+                </section>
+                <div>
+                    <section>
+                        <form className="form--login" onSubmit={handleLogin}>
+                            <h1 className="login__header">Tzadik Recordings</h1>
+                            <h2 className="login__signInPrompt">Please sign in</h2>
+                            <fieldset className="login__fieldset">
+                                <label className="login__fieldsetLabel" htmlFor="inputUsername">Username</label>
+                                <input ref={username} type="username" id="username" className="form-control" placeholder="Username address" required autoFocus />
+                            </fieldset>
+                            <fieldset className="login__fieldset">
+                                <label className="login__fieldsetLabel" htmlFor="inputPassword">Password</label>
+                                <input ref={password} type="password" id="password" className="form-control" placeholder="Password" required />
+                            </fieldset>
+                            <fieldset
+                                className="login__fieldset"
+                                style={{ textAlign: "center" }}>
+                                <button className="btn btn-1 btn-sep icon-send button--submit" type="submit">Sign In</button>
+                            </fieldset>
+                        </form>
+                    </section>
+                    <section className="login__register">
+                        <Link to="/register">Need to create a new account?</Link>
+                    </section>
+                </div>
+            </article>
         </main>
     )
 }

@@ -1,5 +1,5 @@
 .profile, .cart {
-    margin-top: 7%;
+    margin-top: 7.5%;
 }
 
 .cart__heading {
@@ -114,6 +114,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 0 10%;
+    border-bottom: 2px dotted #669999;
 }
 
 .profile__greeting {
@@ -128,7 +129,7 @@
 
 .form--login {
     border: 0;
-    margin: 5px 10.25% 0 10.25%;
+    margin: 15px 10.25% 0 10.25%;
 }
 
 .form-control {
@@ -149,7 +150,23 @@
     margin-right: 5px;
 }
 
-.button--submit {
+.register_check {
+    margin-right: 5px;
+}
+
+.register_isArtist {
+    font-style: italic;
+}
+
+.register_isStaff {
+    font-style: italic;
+}
+
+.register_isVendor {
+    font-style: italic;
+}
+
+.button--submit, .button--cancel {
     color: #FFFFFF;
     background-color: #669999;
     padding: 10px 50px;

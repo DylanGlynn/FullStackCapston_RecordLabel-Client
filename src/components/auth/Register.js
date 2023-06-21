@@ -93,93 +93,95 @@ export const Register = () => {
 
             <form className="form--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Register New Account</h1>
-                <fieldset>
-                    <label htmlFor="first_name">First Name</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="first_name">First Name</label>
                     <input ref={first_name}
                         type="text" name="first_name"
                         className="form-control" placeholder="First name" required autoFocus />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="last_name">Last Name</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="last_name">Last Name</label>
                     <input ref={last_name}
                         type="text" name="last_name"
                         className="form-control" placeholder="Last name" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="email_address">Email Address</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="email_address">Email Address</label>
                     <input ref={email_address}
                         type="text" name="email_address"
                         className="form-control" placeholder="Email" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="username">Username</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="username">Username</label>
                     <input ref={username}
                         type="text" name="username"
                         className="form-control" placeholder="Username" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="password">Password</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="password">Password</label>
                     <input ref={password}
-                        type="text" name="password"
+                        type="password" name="password"
                         className="form-control" placeholder="Password" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="verifyPassword">VerifyPassword</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="verifyPassword">VerifyPassword</label>
                     <input ref={verifyPassword}
-                        type="text" name="verifyPassword"
+                        type="password" name="verifyPassword"
                         className="form-control" placeholder="verifyPassword" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="address_street">Street Address</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="address_street">Street Address</label>
                     <input ref={address_street}
                         type="text" name="address_street"
                         className="form-control" placeholder="Street Address" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="address_city">City</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="address_city">City</label>
                     <input ref={address_city}
                         type="text" name="address_city"
                         className="form-control" placeholder="City" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="address_state">State</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="address_state">State</label>
                     <input ref={address_state}
                         type="text" name="address_state"
                         className="form-control" placeholder="State" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="address_zipcode">Zip Code</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="address_zipcode">Zip Code</label>
                     <input ref={address_zipcode}
                         type="text" name="address_zipcode"
                         className="form-control" placeholder="Zip Code" required />
                 </fieldset>
-                <fieldset>
-                    <label htmlFor="payment_type">Payment Type</label>
+                <fieldset className="register__fieldset">
+                    <label className="register__fieldsetLabel" htmlFor="payment_type">Payment Type</label>
                     <input ref={payment_type}
                         type="text" name="payment_type"
                         className="form-control" placeholder="Payment Type" required />
                 </fieldset>
-                <fieldset>
+                <fieldset className="register__fieldset">
                     <input className="register_check" ref={is_staff}
                         type="checkbox" id="is_staff" />
                     <label className="register_isStaff" htmlFor="is_staff">Wait... You work here?!</label>
                 </fieldset>
-                <fieldset>
+                <fieldset className="register__fieldset">
                     <input className="register_check" ref={is_vendor}
                         type="checkbox" id="is_vendor" />
                     <label className="register_isVendor" htmlFor="is_vendor">Do you sell our records? Thank you, sincerely.</label>
                 </fieldset>
-                <fieldset>
+                <fieldset className="register__fieldset">
                     <input className="register_check" ref={is_artist}
                         type="checkbox" id="is_artist" />
                     <label className="register_isArtist" htmlFor="is_artist">Are you an artist with a release on Tzadik?</label>
                 </fieldset>
-                <fieldset>
-                    <button className="button--submit" type="submit">Register</button>
-                </fieldset>
-                <fieldset>
-                    <button className="button--cancel" type="cancel" onClick={cancelRegister}>I want to go back...</button>
-                </fieldset>
+                <div className="register__buttons">
+                    <fieldset className="register__fieldset">
+                        <button className="button--submit" type="submit">Register</button>
+                    </fieldset>
+                    <fieldset className="register__fieldset">
+                        <button className="button--cancel" type="cancel" onClick={cancelRegister}>I want to go back...</button>
+                    </fieldset>
+                </div>
             </form>
         </main>
     )
