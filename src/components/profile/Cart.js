@@ -33,6 +33,7 @@ export const Cart = () => {
     const deleteAlbum = (id) => {
         let albumId = parseInt(id)
         FetchDelete("albums", `/${albumId}/remove_from_order`, Method("DELETE",))
+            .then(() => getOpenOrder())
 
     }
 

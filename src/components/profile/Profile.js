@@ -79,7 +79,7 @@ export const MyProfile = () => {
                     name="first_name"
                     className="form-control"
                     defaultValue={activeUser?.user?.first_name}
-                    required />
+                    required autoFocus/>
             </fieldset>
             <fieldset className="profile__fieldset">
                 <label className="profile__fieldsetLabel" htmlFor="last_name">Last Name</label>
