@@ -40,7 +40,7 @@ export const EmployeeNav = () => {
                     {
                         categories.map(category => 
                         <li className="category__label" key={category.id} id={category.id}>
-                            <Link className="category" to={`/categories/${category.id}`}>{category.name}</Link>
+                            <Link className="category__label" to={`/categories/${category.id}`}>{category.name}</Link>
                             {category.id < categoryLength ? " |": ""}
                         </li>)
                     }
